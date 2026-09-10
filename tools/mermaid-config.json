@@ -1,0 +1,24 @@
+{
+  "startOnLoad": false,
+  "securityLevel": "strict",
+  "theme": "base",
+  "fontFamily": "Malgun Gothic, Noto Sans CJK KR, Noto Sans KR, sans-serif",
+  "themeVariables": {
+    "fontSize": "20px",
+    "primaryColor": "#ffffff",
+    "primaryTextColor": "#172b4d",
+    "primaryBorderColor": "#94a3b8",
+    "lineColor": "#52657f",
+    "secondaryColor": "#eaf2ff",
+    "tertiaryColor": "#f8fafc",
+    "edgeLabelBackground": "#f8fafc"
+  },
+  "flowchart": {
+    "htmlLabels": false,
+    "curve": "linear",
+    "nodeSpacing": 38,
+    "rankSpacing": 44,
+    "padding": 18,
+    "diagramPadding": 12
+  }
+}

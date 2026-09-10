@@ -1,0 +1,36 @@
+name: 표시·도구 문제 / Bug report
+description: 깨진 표시, 링크, 도식 생성이나 검증 도구 문제를 알려주세요.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 문제 위치 / Location
+      description: 문서 링크, 파일명 또는 실행한 명령을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 읽는 환경 / Environment
+      description: GitHub, Zed 등 사용 앱과 OS, 밝은·어두운 테마를 적어주세요. 도구 문제는 Node.js 버전도 알려주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 결과와 재현 방법 / Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 결과 / Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 화면 예시 / Screenshots (optional)
+      description: 설명에 도움이 되는 화면을 첨부할 수 있습니다. 비공개 정보는 제외해주세요.

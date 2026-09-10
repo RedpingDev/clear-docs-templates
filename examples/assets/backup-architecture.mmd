@@ -1,0 +1,9 @@
+flowchart TB
+    config["설정 읽기 · backup.json"] --> check["입력 검사"]
+    check -->|"통과"| copy["파일 복사"]
+    source["원본 폴더"] -->|"읽기"| copy
+    copy -->|"쓰기"| target["새 스냅샷 폴더"]
+    check -->|"실패"| report["결과 보고"]
+    copy -->|"성공 또는 실패"| report
+    classDef focus fill:#eaf2ff,stroke:#2563eb,color:#172b4d,stroke-width:2px;
+    class copy,target focus;

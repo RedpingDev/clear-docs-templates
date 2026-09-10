@@ -1,0 +1,5 @@
+flowchart LR
+    old["어제 원본"] -->|"전체 복사"| past["어제 스냅샷 · 유지"]
+    current["오늘 원본"] -->|"전체 복사"| next["오늘 스냅샷 · 추가"]
+    classDef focus fill:#eaf2ff,stroke:#2563eb,color:#172b4d,stroke-width:2px;
+    class past,next focus;

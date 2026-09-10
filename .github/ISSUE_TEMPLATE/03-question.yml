@@ -1,0 +1,28 @@
+name: 사용 질문 / Usage question
+description: 템플릿 선택, Codex 적용, 이미지 갱신 등의 사용 질문을 남겨주세요.
+title: "[Question] "
+labels: [question]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 관련 안내나 작업 / Related guide or task
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 사용 환경 / Environment
+      description: 문서를 읽거나 작성하는 앱과 OS를 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문과 원하는 결과 / Question and intended result
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 확인한 안내와 시도한 방법 / What you tried (optional)
